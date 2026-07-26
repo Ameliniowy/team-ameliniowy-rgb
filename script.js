@@ -1,5 +1,5 @@
 /* ==========================================
-   TEAM AMELINIOWY RGB 6.0
+   TEAM AMELINIOWY RGB 7.0
 ========================================== */
 
 const logo = document.getElementById("logo");
@@ -20,7 +20,7 @@ const colors = [
 const DURATION = 5000;
 
 function lerp(a,b,t){
-    return a + (b-a) * t;
+    return a + (b-a)*t;
 }
 
 function getColor(offset){
@@ -42,28 +42,20 @@ function getColor(offset){
     const b = Math.round(lerp(c1[2], c2[2], t));
 
     return `rgb(${r},${g},${b})`;
-
 }
 
 function animate(){
 
-    /* TEAM */
-    const logoColor = getColor(0);
+    // Team Ameliniowy
+    logo.style.color = getColor(0);
 
-    logo.style.color = logoColor;
+    // Jaki kształt ma Ziemia?
+    question.style.color = getColor(2.8);
 
-    /* PYTANIE */
-    const questionColor = getColor(3.5);
-
-    question.style.color = questionColor;
-
-    /* ODPOWIEDŹ */
-    const answerColor = getColor(4.2);
-
-    answer.style.color = answerColor;
+    // PŁASKA CZY KULISTA?
+    answer.style.color = getColor(5.2);
 
     requestAnimationFrame(animate);
-
 }
 
 animate();
