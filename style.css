@@ -1,148 +1,125 @@
 /* ==========================================
-   TEAM AMELINIOWY RGB 6.1
+   TEAM AMELINIOWY RGB 6.2
 ========================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Allura&family=Bebas+Neue&display=swap');
 
 html,
 body{
-
     margin:0;
     padding:0;
-
     width:100%;
     height:100%;
-
     overflow:hidden;
-
     background:transparent;
-
     display:flex;
     justify-content:center;
     align-items:center;
-
 }
 
 #container{
-
     display:flex;
     flex-direction:column;
     align-items:center;
     justify-content:center;
-
 }
 
-/* ===== TEAM AMELINIOWY ===== */
+/* ===== TEAM AMELINIOWY - BEZ ZMIAN ===== */
 
 #logo{
-
-    font-family:'Allura', cursive;
-
+    font-family:'Allura',cursive;
     font-size:110px;
-
-    line-height:.85;
-
+    font-weight:normal;
     text-align:center;
-
+    line-height:.85;
     color:#00ff80;
-
+    user-select:none;
     white-space:nowrap;
 
-    user-select:none;
-
     text-shadow:
-        0 0 3px currentColor,
-        0 0 8px currentColor,
-        0 0 14px currentColor;
-
+        0 0 6px currentColor,
+        0 0 14px currentColor,
+        0 0 28px currentColor;
 }
 
-/* ===== PYTANIE ===== */
+/* ===== JAKI KSZTAŁT MA ZIEMIA ===== */
 
 #question{
 
-    margin-top:28px;
+    margin-top:24px;
 
-    font-family:'Bebas Neue', sans-serif;
+    font-family:'Bebas Neue',sans-serif;
 
-    font-size:38px;
+    font-size:34px;
 
     letter-spacing:2px;
 
     text-align:center;
 
+    line-height:1.05;
+
     color:#ffffff;
 
     text-shadow:
-        0 0 2px rgba(255,255,255,.20);
+        0 0 2px rgba(255,255,255,.18);
 
 }
 
-/* ===== ODPOWIEDŹ ===== */
+/* ===== PŁASKA CZY KULISTA ===== */
 
 #answer{
 
     margin-top:2px;
 
-    font-family:'Bebas Neue', sans-serif;
+    font-family:'Bebas Neue',sans-serif;
 
-    font-size:54px;
+    font-size:50px;
 
-    letter-spacing:3px;
+    letter-spacing:2px;
 
     text-align:center;
+
+    line-height:1.0;
 
     color:#00ff80;
 
     text-shadow:
-        0 0 3px currentColor,
-        0 0 8px currentColor,
-        0 0 14px currentColor;
+        0 0 4px currentColor,
+        0 0 10px currentColor,
+        0 0 18px currentColor;
 
 }
 
 /* ===== Skalowanie ===== */
 
-@media (max-width:1000px){
+@media(max-width:1000px){
 
-#logo{
+    #logo{
+        font-size:82px;
+    }
 
-font-size:82px;
+    #question{
+        font-size:28px;
+    }
 
-}
-
-#question{
-
-font-size:30px;
-
-}
-
-#answer{
-
-font-size:42px;
+    #answer{
+        font-size:40px;
+    }
 
 }
 
-}
+@media(max-width:700px){
 
-@media (max-width:700px){
+    #logo{
+        font-size:62px;
+    }
 
-#logo{
+    #question{
+        font-size:22px;
+    }
 
-font-size:62px;
-
-}
-
-#question{
-
-font-size:24px;
-
-}
-
-#answer{
-
-font-size:34px;
-
-}
+    #answer{
+        font-size:30px;
+    }
 
 }
