@@ -1,8 +1,9 @@
 /* ==========================================
-   TEAM AMELINIOWY RGB 5.0
+   TEAM AMELINIOWY RGB 6.0
 ========================================== */
 
 const logo = document.getElementById("logo");
+const question = document.getElementById("question");
 const answer = document.getElementById("answer");
 
 const colors = [
@@ -19,7 +20,7 @@ const colors = [
 const DURATION = 5000;
 
 function lerp(a,b,t){
-    return a + (b-a)*t;
+    return a + (b-a) * t;
 }
 
 function getColor(offset){
@@ -46,13 +47,18 @@ function getColor(offset){
 
 function animate(){
 
-    // TEAM AMELINIOWY
+    /* TEAM */
     const logoColor = getColor(0);
 
     logo.style.color = logoColor;
 
-    // PŁASKA CZY KULISTA?
-    const answerColor = getColor(3.5);
+    /* PYTANIE */
+    const questionColor = getColor(3.5);
+
+    question.style.color = questionColor;
+
+    /* ODPOWIEDŹ */
+    const answerColor = getColor(4.2);
 
     answer.style.color = answerColor;
 
