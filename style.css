@@ -1,6 +1,8 @@
 /* ==========================================
-   TEAM AMELINIOWY RGB 6.0
+   TEAM AMELINIOWY RGB 6.1
 ========================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Bebas+Neue&display=swap');
 
 html,
 body{
@@ -38,22 +40,20 @@ body{
 
     font-size:110px;
 
-    font-weight:normal;
+    line-height:.85;
 
     text-align:center;
 
-    line-height:.85;
-
     color:#00ff80;
 
-    user-select:none;
-
     white-space:nowrap;
+
+    user-select:none;
 
     text-shadow:
         0 0 3px currentColor,
         0 0 8px currentColor,
-        0 0 16px currentColor;
+        0 0 14px currentColor;
 
 }
 
@@ -61,17 +61,15 @@ body{
 
 #question{
 
-    margin-top:32px;
+    margin-top:28px;
 
-    font-family:'Allura', cursive;
+    font-family:'Bebas Neue', sans-serif;
 
-    font-size:46px;
+    font-size:38px;
 
-    font-weight:normal;
+    letter-spacing:2px;
 
     text-align:center;
-
-    line-height:1.0;
 
     color:#ffffff;
 
@@ -84,57 +82,67 @@ body{
 
 #answer{
 
-    margin-top:8px;
+    margin-top:2px;
 
-    font-family:'Allura', cursive;
+    font-family:'Bebas Neue', sans-serif;
 
-    font-size:56px;
+    font-size:54px;
 
-    font-weight:normal;
+    letter-spacing:3px;
 
     text-align:center;
-
-    line-height:1.0;
 
     color:#00ff80;
 
     text-shadow:
         0 0 3px currentColor,
         0 0 8px currentColor,
-        0 0 16px currentColor;
+        0 0 14px currentColor;
 
 }
 
 /* ===== Skalowanie ===== */
 
-@media(max-width:1000px){
+@media (max-width:1000px){
 
-    #logo{
-        font-size:80px;
-    }
+#logo{
 
-    #question{
-        font-size:34px;
-    }
-
-    #answer{
-        font-size:42px;
-    }
+font-size:82px;
 
 }
 
-@media(max-width:700px){
+#question{
 
-    #logo{
-        font-size:60px;
-    }
+font-size:30px;
 
-    #question{
-        font-size:28px;
-    }
+}
 
-    #answer{
-        font-size:34px;
-    }
+#answer{
+
+font-size:42px;
+
+}
+
+}
+
+@media (max-width:700px){
+
+#logo{
+
+font-size:62px;
+
+}
+
+#question{
+
+font-size:24px;
+
+}
+
+#answer{
+
+font-size:34px;
+
+}
 
 }
