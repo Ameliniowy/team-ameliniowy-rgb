@@ -1,23 +1,82 @@
+/* ==========================================
+   TEAM AMELINIOWY RGB 6.0
+========================================== */
+
+html,
+body{
+
+    margin:0;
+    padding:0;
+
+    width:100%;
+    height:100%;
+
+    overflow:hidden;
+
+    background:transparent;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+#container{
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+
+}
+
+/* ===== TEAM AMELINIOWY ===== */
+
+#logo{
+
+    font-family:'Allura', cursive;
+
+    font-size:110px;
+
+    font-weight:normal;
+
+    text-align:center;
+
+    line-height:.85;
+
+    color:#00ff80;
+
+    user-select:none;
+
+    white-space:nowrap;
+
+    text-shadow:
+        0 0 3px currentColor,
+        0 0 8px currentColor,
+        0 0 16px currentColor;
+
+}
+
 /* ===== PYTANIE ===== */
 
 #question{
 
-    margin-top:35px;
+    margin-top:32px;
+
+    font-family:'Allura', cursive;
+
+    font-size:46px;
+
+    font-weight:normal;
 
     text-align:center;
 
-    font-family:Arial, Helvetica, sans-serif;
-
-    font-size:30px;
-
-    font-weight:700;
-
-    line-height:1.2;
+    line-height:1.0;
 
     color:#ffffff;
 
     text-shadow:
-        0 0 2px rgba(255,255,255,.30);
+        0 0 2px rgba(255,255,255,.20);
 
 }
 
@@ -25,22 +84,57 @@
 
 #answer{
 
-    display:block;
-
     margin-top:8px;
 
-    font-size:38px;
+    font-family:'Allura', cursive;
 
-    font-weight:900;
+    font-size:56px;
 
-    letter-spacing:1px;
+    font-weight:normal;
+
+    text-align:center;
+
+    line-height:1.0;
 
     color:#00ff80;
 
     text-shadow:
         0 0 3px currentColor,
-        0 0 8px currentColor;
+        0 0 8px currentColor,
+        0 0 16px currentColor;
 
-    animation:pulse 3s ease-in-out infinite;
+}
+
+/* ===== Skalowanie ===== */
+
+@media(max-width:1000px){
+
+    #logo{
+        font-size:80px;
+    }
+
+    #question{
+        font-size:34px;
+    }
+
+    #answer{
+        font-size:42px;
+    }
+
+}
+
+@media(max-width:700px){
+
+    #logo{
+        font-size:60px;
+    }
+
+    #question{
+        font-size:28px;
+    }
+
+    #answer{
+        font-size:34px;
+    }
 
 }
